@@ -1,0 +1,24 @@
+<p>Dear <%= @user.username %>, thank you for your registration on the Ark Labs TEC.<br/>
+Your contribution will be more than appreciated.</p>
+
+<p>Here is your resume:</p>
+
+<p>
+  username: <%= @user.username %><br/>
+
+  <% if @user.email.present? %>
+  email: <%= @user.email %><br/>
+  <% end %>
+
+  registered on: <%= @user.created_at.strftime('%d/%m/%Y') %><br/>
+
+  your referral link: https://arklabs.us/?ref=<%= @user.referral_code %><br><br>
+
+  Provide your referal link to anyone if you want to share our dream and let people become part of Ark Labs family.<br/>
+  If you need anything contact us at <a href="tec@arklabs.us">tec@arklabs.us</a>
+</p>
+
+<p>
+  Regards,<br/>
+  Ark Labs Staff
+</p>
