@@ -36,7 +36,7 @@ gem 'rest-client'
 gem 'redis'
 
 # Newsletter
-gem 'mailchimp-api', require: 'mailchimp'
+gem 'mailchimp-api', '2.0.6'
 
 group :development do
   gem 'dotenv-rails'
