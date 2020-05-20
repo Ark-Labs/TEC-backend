@@ -6,7 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.1.3'
+gem 'rails', '~> 5.2.4', '>= 5.2.4.3'
 
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
@@ -15,7 +15,7 @@ gem 'pg', '~> 0.18'
 gem 'puma', '~> 3.7'
 
 # Use jQuery as default JS library
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.3.1'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -24,10 +24,10 @@ gem 'uglifier', '>= 1.3.0'
 gem 'mini_racer'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.5'
+gem 'jbuilder', '~> 2.7', '>= 2.7.0'
 
 # Use Devise as user authentication mechanism
-gem 'devise'
+gem 'devise', '>= 4.4.2'
 
 # Use RestClient to make HTTP calls
 gem 'rest-client'
@@ -39,5 +39,5 @@ gem 'redis'
 gem 'mailchimp-api', require: 'mailchimp'
 
 group :development do
-  gem 'dotenv-rails'
+  gem 'dotenv-rails', '>= 2.2.2'
 end
